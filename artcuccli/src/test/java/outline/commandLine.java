@@ -58,6 +58,7 @@ public class commandLine extends Config{
 	
 	@Then("^Message displayed LogOut Successfully$")
 	public void message_displayed_LogOut_successfully() throws Throwable {
+		System.out.println("logging out");
 		//wait.until(ExpectedConditions.elementToBeClickable(By.name("login")));
 		driver.close();
 	}
